@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Temperature Converter</string>
+    <string name="f">fahrenheit</string>
+    <string name="degree">Degree</string>
+    <string name="c">Celsius</string>
+    <string name="inputTemperature">0.0 F</string>
+</resources>
