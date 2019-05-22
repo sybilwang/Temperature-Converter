@@ -3,5 +3,5 @@
     <string name="f">fahrenheit</string>
     <string name="degree">Degree</string>
     <string name="c">Celsius</string>
-    <string name="inputTemperature">0.0 F</string>
+    <string name="inputTemperature"> </string>
 </resources>

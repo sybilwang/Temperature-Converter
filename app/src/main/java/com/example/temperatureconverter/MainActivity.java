@@ -114,40 +114,25 @@ public class MainActivity extends AppCompatActivity {
         f = findViewById(R.id.f);
         Display = findViewById(R.id.Display);
         fahrenheitTemperature = findViewById(R.id.fahrenheitTemperature);
-        //output_TV = findViewById(R.id.output_tv);
-
-        //userInput();
-
-        //}
-
-        //private void userInput(){
-
-        //c.setOnClickListener(new View.OnClickListener() {
-
-        // public void onClick(View v) {
-        ConverterClass converterClass = new ConverterClass();
-        double degCel = Double.parseDouble(fahrenheitTemperature.getText().toString());
-        double degFar = converterClass.c(degCel);
-        //Display.setText(Double.toString(degCel));
-        //output_TV.setText(Double.toString(degFar));
 
 
-    }
+        userInput();
 
-}
-        //});
+        }
 
-        /*
-        f2c_Btn.setOnClickListener(new View.OnClickListener() {
+        private void userInput(){
+
+        fahrenheitTemperature.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ConverterClass converterClass=new ConverterClass();
-                double degFar=Double.parseDouble(input_Edt.getText().toString());
-                double degCel=converterClass.f2c_fn(degFar);
-                output_TV.setText(Double.toString(degCel));
+                double degCel = Double.parseDouble(fahrenheitTemperature.getText().toString());
+                degCel = (degCel  -  32)/1.8;
+                Display.setText(Double.toString(degCel));
 
             }
         });
-        */
+
+    }
+}
 
 
